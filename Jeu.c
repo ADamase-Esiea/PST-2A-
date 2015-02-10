@@ -4,7 +4,7 @@
 #include <time.h>
 
 
-void InitBilleArray[plateau TabJeu] { // Initialise les billes du plateau a 0 donc aucun billes elles seront placée par l'utilisateur au début du jeu..
+void InitBilleArray(plateau TabJeu) { // Initialise les billes du plateau a 0 donc aucun billes elles seront placée par l'utilisateur au début du jeu..
 int i;	
 int j;
 	for (i=0 ; i<14;i++) {
@@ -18,7 +18,7 @@ int j;
 
 
 
-void InitTabJeu[plateau TabJeu] { // Fonction qui initialise le plateau de jeu avant le départ de la partie.
+void InitTabJeu(plateau TabJeu) { // Fonction qui initialise le plateau de jeu avant le départ de la partie.
 	
 	
 	
