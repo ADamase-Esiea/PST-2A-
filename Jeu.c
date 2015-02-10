@@ -15,6 +15,33 @@ int j;
 	}	
 }
 
+void random(plateau TabJeu) {
+int case1=0;
+int case2=0;
+int i=0;
+int j=0;
+
+Srand(time(NULL));
+for (j=0;j<14;j++) {
+for (i=0;i<14;i++){
+if (i==1 || i==2) {
+	TabJeu[i][j].tireV=rand()%2;
+}
+else {
+case1=TabJeu[i-2][j].tireV;
+case2=TabJeu[i-1][j].tireV;
+if (case1=0 && case2=0) {
+	TabJeu[i][j].tireV=1;
+}
+else { 
+	TabJeu[i][j]=rand()%2;
+	
+	
+}	
+}
+}
+}
+}	
 
 
 
