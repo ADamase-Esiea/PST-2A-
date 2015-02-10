@@ -4,12 +4,12 @@
 #include <time.h>
 
 
-void InitBilleArray(plateau TabJeu) { // Initialise les billes du plateau a 0 donc aucun billes elles seront placée par l'utilisateur au début du jeu..
+void InitBilleArray(plateau TabJeu) { // Initialise tout le plateau a 0 donc aucun billes elles seront placée par l'utilisateur au début du jeu après que les trous aient été placé aléatoirement.
 int i;	
 int j;
 	for (i=0 ; i<14;i++) {
 		for (j=0;i<14;j++) {
-		TabJeu[i][j].bille=0;
+		TabJeu[i][j]={0,0,0};
 	
 		}	
 	}	
