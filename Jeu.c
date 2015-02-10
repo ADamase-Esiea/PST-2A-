@@ -6,7 +6,7 @@ void InitBilleArray[plateau TabJeu] { // Initialise les billes du tableau a 0.
 int i;	
 int j;
 	for (i=0 ; i<14;i++) {
-		for (j=0;i>14;j++) {
+		for (j=0;i<14;j++) {
 		TabJeu[i][j].bille=0;
 	
 		}	
