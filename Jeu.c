@@ -39,6 +39,9 @@ else {
 	
 }	
 }
+
+Printf("%d\n",TabJeu[i][j].tireV);
+
 }
 }
 }	
