@@ -4,9 +4,9 @@
 
 int main () {
 	
-int TabJeu[14][14]; // Tableau de jeu (Il faudra change le type de variable par celui qu'on aura définis)
+plateau TabJeu[14][14]; // Tableau de variables de type tableau contenant comme informations bille , tireH et tireV
 
-//CONNARD DE GITHUB
+
 
 	return 0;
 }
