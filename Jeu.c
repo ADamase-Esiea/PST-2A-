@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <Jeu.h>
 
-void InitBilleArray[plateau TabJeu] { // Initialise les billes du tableau a 0.
+void InitBilleArray[plateau TabJeu] { // Initialise les billes du plateau a 0 donc aucun billes elles seront placée par l'utilisateur au début du jeu..
 int i;	
 int j;
 	for (i=0 ; i<14;i++) {
