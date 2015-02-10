@@ -15,6 +15,14 @@ int j;
 
 
 
+
+void InitTabJeu[plateau TabJeu] { // Fonction qui initialise le plateau de jeu avant le départ de la partie.
+	
+	
+	
+}
+
+
 int main () {
 	
 plateau TabJeu[14][14]; // Tableau de variables de type tableau contenant comme informations bille , tireH et tireV
