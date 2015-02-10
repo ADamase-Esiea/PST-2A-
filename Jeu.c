@@ -49,7 +49,8 @@ Printf("%d\n",TabJeu[i][j].tireV);
 
 
 void InitTabJeu(plateau TabJeu) { // Fonction qui initialise le plateau de jeu avant le départ de la partie.
-	
+	InitBilleArrat(TabJeu);
+	random(TabJeu);
 	
 	
 }
@@ -59,7 +60,7 @@ int main () {
 	
 plateau TabJeu[14][14]; // Tableau de variables de type tableau contenant comme informations bille , tireH et tireV
 
-
+InitTabJeu(TabJeu);
 
 	return 0;
 }
