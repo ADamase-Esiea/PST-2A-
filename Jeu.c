@@ -3,7 +3,7 @@
 #include "Jeu.h"
 #include <time.h>
 
-
+// Test Github
 void InitBilleArray(int TabJeu[14][14][3]) { // Initialise tout le plateau a 0 donc aucun billes elles seront placée par l'utilisateur au début du jeu après que les trous aient été placé aléatoirement.
 	int i;	
 	int j;
