@@ -16,7 +16,7 @@ int j;
 	}	
 }
 
-void random(int TabJeu) {
+void random(int TabJeu[14][14][3]) {
 int case1=0;
 int case2=0;
 int i=0;
@@ -49,7 +49,7 @@ case2=TabJeu[i-1][j][2];
 
 
 
-void InitTabJeu(int TabJeu) { // Fonction qui initialise le plateau de jeu avant le départ de la partie.
+void InitTabJeu(int TabJeu[14][14][3]) { // Fonction qui initialise le plateau de jeu avant le départ de la partie.
 	InitBilleArrat(TabJeu);
 	random(TabJeu);
 	
@@ -61,7 +61,7 @@ int main () {
 	
 int TabJeu[14][14][3]; // Tableau de variables de type tableau contenant comme informations bille[0] , tireH [1] et tireV [2]
 
-InitTabJeu(TabJeu);
+InitTabJeu(TabJeu[14][14][3]);
 
 	return 0;
 }
