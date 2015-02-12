@@ -31,7 +31,7 @@ Srand(time(NULL));
 			else {
 case1=TabJeu[i-2][j][2];
 case2=TabJeu[i-1][j][2];
-			if (case1=0 && case2=0) {
+			if (case1==0 && case2==0) {
 			TabJeu[i][j][2]=1;
 }
 			else { 
@@ -61,7 +61,7 @@ int main () {
 	
 int TabJeu[14][14][3]; // Tableau de variables de type tableau contenant comme informations bille[0] , tireH [1] et tireV [2]
 
-InitTabJeu(TabJeu[14][14][3]);
+InitTabJeu(TabJeu);
 
 	return 0;
 }
