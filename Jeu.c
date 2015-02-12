@@ -8,7 +8,7 @@ void InitBilleArray(int TabJeu[14][14][3]) { // Initialise tout le plateau a 0 d
 	int i;	
 	int j;
 	for (i=0 ; i<14;i++) {
-		for (j=0;i<14;j++) {
+		for (j=0;j<14;j++) {
 			TabJeu[i][j][0]=0;
 			TabJeu[i][j][1]=0;
 			TabJeu[i][j][2]=0;
