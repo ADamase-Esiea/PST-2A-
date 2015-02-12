@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <Jeu.h>
+#include "Jeu.h"
 #include <time.h>
 
 
-void InitBilleArray(plateau TabJeu) { // Initialise tout le plateau a 0 donc aucun billes elles seront placée par l'utilisateur au début du jeu après que les trous aient été placé aléatoirement.
+void InitBilleArray(int TabJeu) { // Initialise tout le plateau a 0 donc aucun billes elles seront placée par l'utilisateur au début du jeu après que les trous aient été placé aléatoirement.
 int i;	
 int j;
 	for (i=0 ; i<14;i++) {
@@ -16,7 +16,7 @@ int j;
 	}	
 }
 
-void random(plateau TabJeu) {
+void random(int TabJeu) {
 int case1=0;
 int case2=0;
 int i=0;
@@ -49,7 +49,7 @@ case2=TabJeu[i-1][j][2];
 
 
 
-void InitTabJeu(plateau TabJeu) { // Fonction qui initialise le plateau de jeu avant le départ de la partie.
+void InitTabJeu(int TabJeu) { // Fonction qui initialise le plateau de jeu avant le départ de la partie.
 	InitBilleArrat(TabJeu);
 	random(TabJeu);
 	
@@ -59,7 +59,7 @@ void InitTabJeu(plateau TabJeu) { // Fonction qui initialise le plateau de jeu a
 
 int main () {
 	
-plateau TabJeu[14][14][3]; // Tableau de variables de type tableau contenant comme informations bille[0] , tireH [1] et tireV [2]
+int TabJeu[14][14][3]; // Tableau de variables de type tableau contenant comme informations bille[0] , tireH [1] et tireV [2]
 
 InitTabJeu(TabJeu);
 
