@@ -15,8 +15,9 @@
 //}; Plus besoin de cette structure on crée un tableau [14][14][3]
 
 // Prototypes :
-void alea(int TabJeu[14][14][3]);
-void InitBilleArray(int TabJeu[14][14][3]);
+void InitVertTirret(int TabJeu[14][14][3]);
+void InitArray(int TabJeu[14][14][3]);
 void InitTabJeu(int TabJeu[14][14][3]);
+void InitHorTirret(int TabJeu[14][14][3]);
 
 #endif
