@@ -19,5 +19,6 @@ void InitVertTirret(int TabJeu[14][14][3]);
 void InitArray(int TabJeu[14][14][3]);
 void InitTabJeu(int TabJeu[14][14][3]);
 void InitHorTirret(int TabJeu[14][14][3]);
+void setBilles(int TabJeu[14][14][3], int nbPlayer, int nbBilles);
 
 #endif
