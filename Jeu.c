@@ -98,13 +98,18 @@ void ShowArray(int TabJeu[14][14][3])
 	printf("\n***--Affichage du tableau de Jeu--***\n");
 	int i=0,j=0;
 	couleur("32");
-	printf("|XX|-|11|12|--|13|14|15|16|17|18|19|20|21|22|--|23|24|\n");
+	printf("|XX|-|A |B |--|C |D |E |F |G |H |I |J |K |L |--|M |N |\n");
 couleur("0");
 
 for(j=0;j<14;j++)
 {
 couleur("32");
-printf("|%d|-",j+11);
+if (j<10) {
+printf("|%d |-",j);
+}
+else { 
+printf("|%d|-",j);
+}
 couleur("0");
 
 		for(i=0;i<14;i++)
