@@ -11,3 +11,15 @@ EN COURS : INITIALISATION DE LA LANGUETTE VERTICALE DE MANIERE ALEATOIRE !!
 Nous avons crée les structures et le tableau
 -Initialisé tout le tableau a 0
 
+
+
+RESTE A FAIRE :
+
+- Fonction qui fait tomber les billes. 
+- Fonction qui déplace les tirettes horizontale
+- Fonction qui déplace les tirettes verticale
+
+
+
+
+-Fonction déroulement du jeu
