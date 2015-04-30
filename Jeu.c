@@ -6,15 +6,15 @@
 
 // Test Github
 void InitArray(int TabJeu[14][14][3]) { // Initialise tout le plateau a 0 donc aucun billes elles seront placée par l'utilisateur au début du jeu après que les trous aient été placé aléatoirement.
-	int i;
+	int i;	
 	int j;
 	for (i=0 ; i<14;i++) {
 		for (j=0;j<14;j++) {
 			TabJeu[i][j][0]=0;
 			TabJeu[i][j][1]=9;
 			TabJeu[i][j][2]=9;
-		}
-	}
+		}	
+	}	
 }
 
 void InitHorTirret(int TabJeu[14][14][3]) {
@@ -41,22 +41,22 @@ void InitHorTirret(int TabJeu[14][14][3]) {
 					if (case1==0 && case2==0) {
 						TabJeu[i][j][2]=1;
 					}
-					else {
+					else { 
 						TabJeu[i][j][2]=rand()%2;
-					}
+					}	
 				}
 
 			}
-		}}
-	for (j=0;j<14;j++)
+		}}	
+	for (j=0;j<14;j++) 
 	{
-		for (i=0;i<14;i++)
+		for (i=0;i<14;i++)	
 		{
 			//printf("%d",TabJeu[i][j][2]);
 		}
-		//printf("\n");
+		//printf("\n");		
 	}
-}
+}	
 
 void InitVertTirret(int TabJeu[14][14][3]) {
 	printf("***--Initialisation des Tirettes Verticales--***\n");
@@ -81,9 +81,9 @@ void InitVertTirret(int TabJeu[14][14][3]) {
 					if (case1==0 && case2==0) {
 						TabJeu[i][j][1]=1;
 					}
-					else {
+					else { 
 						TabJeu[i][j][1]=rand()%2;
-					}
+					} 
 				}}
 
 				//printf("%d",TabJeu[i][j][1]);
@@ -99,52 +99,51 @@ void setBilles(int TabJeu[14][14][3], int nbPlayer, int nbBilles) {
 	int j;
 	int x;
 	int y;
-int test;
+	int test;
 
 
-		printf("Les %d joueurs doivent chacun placer %d boules\n",nbPlayer,nbBilles);
+	printf("Les %d joueurs doivent chacun placer %d boules\n",nbPlayer,nbBilles);
 	for (i=1; i<nbPlayer+1;i++) {
 		for (j=1; j<nbBilles+1;j++) {
 			test=1;
-		while (test ==1) {
-			test=0;
-			x=0;
-			y=0;
+			while (test ==1) {
+				test=0;
+				i=0;
+				y=0;
 
-	printf("Choisissez la postion de la bille %d du joueur %d sur l'axe X\n",j,i);
-			while (x<2 || x>11) {
+				printf("Choisissez la postion de la bille %d du joueur %d sur l'axe X\n",j,i);
+				while (x<2 || x>11) {
 
-			scanf("%d",&x);
-			if (x<2 || x>11) {
-			printf("La valeur ne peux pas être inférieur a 2 ou dépasser 11\n");
-}
-
-
-}
+					scanf("%d",&x);
+					if (x<2 || x>11) {
+						printf("La valeur ne peux pas être inférieur a 2 ou dépasser 11\n");
+					}
 
 
+				}
 
-	printf("Choisissez la position  de la bille %d du joueur %d sur l'axe Y\n", j ,i);
-		while (y<2 || y > 11) {
-		scanf("%d",&y);
-		if (y<2 || y>11) {
 
-		printf("La valeur ne peux pas être inférieur a 2 ou dépasser 11\n");
 
-}
-}
+				printf("Choisissez la position  de la bille %d du joueur %d sur l'axe Y\n", j ,i);
+				while (y<2 || y > 11) {
+					scanf("%d",&y);
+					if (y<2 || y>11) {
 
-		if (TabJeu[x][y][0]!=0) {
-			printf("Une bille est déjà placé veuillez choisir une autre position.\n");
+						printf("La valeur ne peux pas être inférieur a 2 ou dépasser 11\n");
+
+					}
+				}
+
+				if (TabJeu[x][y][0]!=0) {
+					printf("Une bille est déjà placé veuillez choisir une autre position.\n");
 					test=1;
-}
-}
-		TabJeu[x][y][0] =j;
+				}
+			}
+			TabJeu[x][y][0] =j;
 
+		}
+	}
 }
-}
-}
-
 
 
 void ShowArray(int TabJeu[14][14][3])
@@ -163,15 +162,15 @@ void ShowArray(int TabJeu[14][14][3])
 	couleur("0");
 
 	for(j=0;j<14;j++)
-	{
+	{	
 		if(j==2 || j==12)
 		        {
 			        couleur("36");
 				        printf("|----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n");
 					        couleur("0");
-						        }
+						        }  
 	if(j<10)
-		{
+		{	
 			couleur("36");
 			printf("| 0%d |",j);
 			couleur("0");
@@ -181,10 +180,10 @@ void ShowArray(int TabJeu[14][14][3])
 			printf("| %d |",j);
 			couleur("0");
 		}
-
+	
 		for(i=0;i<14;i++)
 		{
-			// ON ENTRE DANS LE CAS DANS BILLE ------------------------------------------
+			// ON ENTRE DANS LE CAS DANS BILLE ------------------------------------------		
 			if(i==2 || i==12)
 			{	couleur("36");
 				printf("---|");
@@ -193,11 +192,11 @@ void ShowArray(int TabJeu[14][14][3])
 
 			if(TabJeu[i][j][0]==0)
 			{
-
-
+			
+			
 				if(TabJeu[i][j][1]==0)
 				{
-
+				
 					if(TabJeu[i][j][2]==0)
 					{
 						printf(" B ");
@@ -218,9 +217,9 @@ void ShowArray(int TabJeu[14][14][3])
 						printf(" X ");
 					}
 					if(TabJeu[i][j][2]==1)
-					{
+					{   
 						printf(" X ");
-					}
+					}  
 					if(TabJeu[i][j][2]==9)
 					{
 						printf(" X ");
@@ -241,11 +240,11 @@ void ShowArray(int TabJeu[14][14][3])
 					printf(" # ");
 					}
 				}
-
+							
 				couleur("36");
 				printf("|");
 				couleur("0");
-
+			
 			}
 			// ON SORT SUR CAS SANS BILLE -----------------------------------------------
 
@@ -289,7 +288,7 @@ void ShowArray(int TabJeu[14][14][3])
 	printf("|----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n");
 	couleur("0");
 
-}
+}		
 
 
 
