@@ -4,21 +4,20 @@ Nous avons crée les structures et le tableau
 
 EN COURS : INITIALISATION DE LA LANGUETTE VERTICALE DE MANIERE ALEATOIRE !!
 
-
--Crée les trous
--Placer les billes
--crée les fonctions de déplacement de languette
-Nous avons crée les structures et le tableau
--Initialisé tout le tableau a 0
-
+FAIT : 
+-Le plateau est crée.
+-Le plateau est initialisé.
+-Crée les trous.
+-Placer les billes.
+- Fonction d'affichage crée.
 
 
 RESTE A FAIRE :
 
+Marc va essayer : 
 - Fonction qui fait tomber les billes. 
 - Fonction qui déplace les tirettes horizontale
 - Fonction qui déplace les tirettes verticale
-
 
 
 
